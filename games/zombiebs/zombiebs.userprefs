@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/HealthManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/EnemyManager1.cs" Line="36" Column="22" />
+      <File FileName="Assets/Scripts/Death.cs" Line="14" Column="17" />
+      <File FileName="Assets/Scripts/ZombieDeath.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/EnemyCharacterController1.cs" Line="134" Column="31" />
+      <File FileName="Assets/Scripts/Player.cs" Line="1" Column="1" />
+      <File FileName="Assets/Fx Explosion Pack/Script/DestroyEffect.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ZombieHealthManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Controller2D.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameOver.cs" Line="13" Column="29" />
+      <File FileName="Assets/Scripts/hpManager.cs" Line="32" Column="31" />
+      <File FileName="Assets/Scripts/HealthManager.cs" Line="45" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <title>SCONNEL6 + FWU65 SE3309 Assignment 4</title>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        <div style='position:absolute;z-index:0;left:0;top:0;width:100%;height:100%'>
+            <img src='http://www.acceltree.com/assets/images/other/map-wld.png' style='width:100%;height:100%' alt='[]' />
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong><font size="10">Bilitical</font></strong></a>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-sm-2"><strong><font size="4"><u>Add Article</u></font></strong>
+                <div class="addArticle">
+                    <label for="addArticle">Article ID</label>
+                    <textarea type="articleID" class="form-control" id="addArticle" aria-describedby="addArticle" placeholder="Enter article ID..."></textarea>
+                </div>
+                <div class="addArtID">
+                    <label for="url">URL</label>
+                    <textarea type="url" class="form-control" id="addArtURL" placeholder="Enter news URL..."></textarea>
+                </div>
+                <div class="addArtAdmin">
+                    <label for="admin">AdminID</label>
+                    <select class="adminID" id="addArtAdmin">
+                    <option>None</option>
+                    <option>fwu65</option>
+                    <option>sconnel6</option>
+                    </select>
+                </div>
+                <div class="addArtViewpoint">
+                    <label for="viewpoint">Viewpoint</label>
+                    <select class="form-control" id="addArtViewpoint">
+                    <option>None</option>
+                    <option>Liberal</option>
+                    <option>Conservative</option>
+                    <option>Centered</option>
+                    <option>Alt Right</option>
+                    </select>
+                </div>
+                <div class="addDate">
+                    <label for="addDate">Date Published</label>
+                    <textarea type="date" class="form-control" id="addDate" aria-describedby="addDate" placeholder="Enter date published in 'm/d/y'..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="insertbtn">Go</button>
+            </div>
+            <div class="col-sm-2"><strong><font size="4"><u>Search Article</u></font></strong>
+                <div class="searchViewpoint">
+                    <label for="viewpoint">Viewpoint</label>
+                    <select class="form-control" id="searchViewpoint">
+                    <option>None</option>
+                    <option>Liberal</option>
+                    <option>Conservative</option>
+                    <option>Centered</option>
+                    <option>Alt Right</option>
+                    </select>
+                </div>
+                <div class="searchJournalist">
+                    <label for="viewpoint">Journalist</label>
+                    <select class="form-control" id="searchJournalist">
+                    <option>None</option>
+                    <option>Aaron Berry</option>
+                    <option>Adam Ward</option>
+                    <option>Eric Hanson</option>
+                    <option>Paul Green</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="searchbtn">Go</button>
+            </div>
+            <div class="col-sm-2"><strong><font size="4"><u>Lookup Journalist</u></font></strong>
+                <div class="lookupViewpoint">
+                    <label for="viewpoint">Viewpoint</label>
+                    <select class="form-control" id="lookupViewpoint">
+                    <option>None</option>
+                    <option>Liberal</option>
+                    <option>Conservative</option>
+                    <option>Centered</option>
+                    <option>Alt Right</option>
+                    </select>
+                </div>
+                <div class="lookupAge">
+                    <label for="age">Age Range</label>
+                    <select class="form-control" id="lookupAge">
+                    <option>None</option>
+                    <option>20-25</option>
+                    <option>26-30</option>
+                    <option>31-40</option>
+                    <option>41-60</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="journsearchbtn">Go</button>
+            </div>
+            <!-- this is just an empty column class to format it -->
+            <div class="col-sm-2"><strong><font size="4"><u> </u></font></strong>
+            </div>
+            <!-- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+            <div class="col-sm-2"><strong><font size="4"><u>Results</u></font></strong>
+                </br>
+                <div id = "resultDisplay" >
+                    <font color = "red" face = "Consolas" size = "4"><strong>
+                        RESULTS GO HERE
+                    </strong></font>
+                </div>
+            </div>
+            </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+            <div class="col-sm-2"><strong><font size="4"><u>Number of Articles Written</u></font></strong>
+                <div class="NumArt">
+                    <label for="number">News Source</label>
+                    <select class="form-control" id="NumArt">
+                    <option>Paul Green</option>
+                    <option>Eric Hanson</option>
+                    <option>Adam Ward</option>
+                    <option>Aaron Berry</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" id="mostartbtn">Go</button>
+            </div>
+            <div class="col-sm-2"><strong><font size="4"><u>Increase Age</u></font></strong>
+                <div class="increaseJourn">
+                    <label for="journalist">journalist</label>
+                    <textarea type="journalist" class="form-control" id="increaseJourn" placeholder="Enter journalist name..."></textarea>
+                </div>
+                <div class="increaseAge">
+                    <label for="age">Increase Age By</label>
+                    <textarea type="age" class="form-control" id="increaseAge" placeholder="Enter increased age amount..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="increasebtn">Go</button>
+            </div>
+            <div class="col-sm-2"><strong><font size="4"><u>Quit</u></font></strong>
+                </br>
+                <a href="http://www.google.com" class="btn btn-primary" id="exitBtn">Quit</a> 
+            </div>
+        </div>
+        <script src="clientside.js" type="text/javascript"></script>
+    </body>
+</html>
